@@ -13,8 +13,8 @@ ReactDOM.render(
 class Square extends React.Component {
     render() {
         return (
-            <button className="square">
-                { this.props.value }
+            <button className="square" onClick={() => { alert('клик') }}>
+                {this.props.value}
             </button>
         );
     }
